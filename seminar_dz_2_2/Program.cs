@@ -11,9 +11,6 @@ while(true){
         }else if(varA>99){
             result=Convert.ToString(varA);
             Console.WriteLine($"Третья цифра заданного числа {result[2]}:");
-
-
-
             break;
         }else{
             Console.WriteLine($"Введите число (от 1 до бесконечности)!!!!");
