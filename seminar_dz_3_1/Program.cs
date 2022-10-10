@@ -23,10 +23,11 @@ static int InitNumber()
 static void CheckPolindrom(int x)
 {
     string x_to_str = Convert.ToString(x);
-    string x_to_str_polindrom = "";
-    for(int i = x_to_str.Length-1; i>=0; i--){
+    string x_to_str_polindrom = new string(x_to_str.Reverse().ToArray());
+    /*for(int i = x_to_str.Length-1; i>=0; i--){//Тоже сработает
         x_to_str_polindrom+=x_to_str[i];
-    }
+    }*/
+
     if(x_to_str == x_to_str_polindrom){
         Console.WriteLine($"{x_to_str} -> Да");
     }else{
