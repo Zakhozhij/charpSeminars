@@ -1,5 +1,5 @@
 ﻿Console.Clear();
-int number, number_polindrom;
+int number;
 try
 {
     number = int.Parse(Console.ReadLine() ?? "");
